@@ -8,7 +8,7 @@
 
 require 'csv'
 
-CSV.foreach("Global_Landslide_Catalog_Export.csv") do |row|
+CSV.foreach("db/Global_Landslide_Catalog_Export.csv") do |row|
 	Landslide.create(
 		#id: row[0]
 		date: row[1],

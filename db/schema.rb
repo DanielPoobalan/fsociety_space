@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 20170429102424) do
     t.integer  "cat_id"
     t.string   "countryname"
     t.string   "near"
-    t.decimal  "distance"
+    t.float    "distance"
     t.string   "adminname1"
     t.string   "adminname2"
     t.string   "population"
@@ -45,12 +45,13 @@ ActiveRecord::Schema.define(version: 20170429102424) do
     t.string   "continentcode"
     t.string   "key"
     t.integer  "version"
-    t.datetime "created_at",                                    null: false
-    t.datetime "updated_at",                                    null: false
-    t.integer  "changeset_id"
-    t.decimal  "latitude",             precision: 10, scale: 6
-    t.decimal  "longitude",            precision: 10, scale: 6
+    t.string   "tstamp"
+    t.string   "changeset_id"
+    t.float    "latitude"
+    t.float    "longitude"
     t.string   "geolocation"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
 end

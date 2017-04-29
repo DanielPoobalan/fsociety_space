@@ -21,7 +21,7 @@ class CreateLandslides < ActiveRecord::Migration
     	t.integer :cat_id
     	t.string :countryname
     	t.string :near
-    	t.decimal :distance
+    	t.float :distance
     	t.string :adminname1
     	t.string :adminname2
     	t.string :population
@@ -29,10 +29,10 @@ class CreateLandslides < ActiveRecord::Migration
     	t.string :continentcode
     	t.string :key
     	t.integer :version
-    	t.timestamps :tstamp
-    	t.integer :changeset_id
-    	t.decimal :latitude, {:precision=>10, :scale=>6}
-    	t.decimal :longitude, {:precision=>10, :scale=>6}
+    	t.string :tstamp
+    	t.string :changeset_id
+    	t.float :latitude
+    	t.float :longitude
     	t.string :geolocation
       t.timestamps null: false
     end
