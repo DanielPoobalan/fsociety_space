@@ -65,6 +65,8 @@ GEM
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     gmaps4rails (2.1.2)
+    groupdate (3.2.0)
+      activesupport (>= 3)
     hashie (3.5.5)
     i18n (0.8.1)
     jbuilder (2.6.3)
@@ -189,6 +191,7 @@ DEPENDENCIES
   figaro
   font-awesome-rails
   gmaps4rails
+  groupdate
   jbuilder (~> 2.0)
   jquery-rails
   markerclustererplus-rails
