@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   namespace :users do
     resources :sessions
     resources :apps, only: [:index]
+    resources :lists, only: [:index]
     resources :landslides, only: [:show]
   end
 
