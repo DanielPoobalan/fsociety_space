@@ -1,9 +1,14 @@
+<style>
+  .center {
+    text-align: center;
+  }
+</style>
 <div class="container-fluid">
-  <div class="col-md-12">
-    <table class="table table-striped">
+  <div class="col-md-offset-4 col-md-4">
+    <table class="table table-hover">
       <thead>
         <% @landslide.attributes.each do |ls| %>
-          <tr>
+          <tr width="5px;">
             <th><%= ls[0].humanize %></th>
             <td><%= ls[1] %></td>
           </tr>
