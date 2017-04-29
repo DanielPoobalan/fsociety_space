@@ -1,7 +1,6 @@
 class CreateLandslides < ActiveRecord::Migration
   def change
     create_table :landslides do |t|
-    	t.integer :id
     	t.date :date
     	t.string :time
     	t.string :country
