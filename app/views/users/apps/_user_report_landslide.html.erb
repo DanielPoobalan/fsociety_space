@@ -1,0 +1,57 @@
+<div class="modal fade" id="reportLandslide" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Report Landslide</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="hazard_type">Hazard Type:</label>
+            <select name="cars" class="form-control">
+              <option value="landslide">Landslide</option>
+              <option value="mudslide">mudslide</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="landslide">Landslide Type:</label>
+            <select name="cars" class="form-control">
+              <option value="landslide">Landslide</option>
+              <option value="rock_fall">Rock Fall</option>
+              <option value="mudslide">Mudslide</option>
+            </select>
+          </div>
+
+
+          <div class="form-group">
+            <label for="trigger">Trigger:</label>
+            <select name="cars" class="form-control">
+              <option value="tropical_cylone">Tropical Cyclone</option>
+              <option value="rain">Rain</option>
+              <option value="downpour">Downpour</option>
+              <option value="continous_rain">Continuous rain</option>
+              <option value="unknown">Unknown</option>
+            </select>
+          </div>
+
+
+          <div class="form-group">
+            <label for="location_description">Location description:</label>
+            <textarea name="" id="location_description" cols="20" rows="5" class="form-control"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
