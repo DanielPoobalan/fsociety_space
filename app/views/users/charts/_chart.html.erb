@@ -1,0 +1,42 @@
+<head>  
+  <script type="text/javascript">
+
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      theme: "theme2",
+      title:{
+        text: "Fatality vs Year"
+      },
+      animationEnabled: true,
+      axisX: {
+        valueFormatString: "YY",
+        interval:1,
+        intervalType: "year"
+        
+      },
+      axisY:{
+        includeZero: false
+        
+      },
+      data: [
+      {        
+        type: "line",
+        //lineThickness: 3,        
+        dataPoints: [
+        <% @arr.each do |x| %>
+        { x: new Date(<%= x[1] %>, 01, 1), y: <%= x[0] %> },
+        <% end %>
+        ]
+      }
+      
+      
+      ]
+    });
+
+chart.render();
+}
+</script>
+
+  <div id="chartContainer" style="height: 300px; width: 100%;">
+  </div>

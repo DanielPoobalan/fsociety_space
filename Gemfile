@@ -17,6 +17,7 @@ gem 'gmaps4rails'
 gem 'underscore-rails'
 gem 'markerclustererplus-rails'
 gem 'font-awesome-rails'
+gem 'groupdate'
 
 
 group :development, :test do
