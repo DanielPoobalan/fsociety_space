@@ -62,6 +62,7 @@ GEM
       thor (~> 0.14)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
+    gmaps4rails (2.1.2)
     hashie (3.5.5)
     i18n (0.8.1)
     jbuilder (2.6.3)
@@ -77,6 +78,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.5)
       mime-types (>= 1.16, < 4)
+    markerclustererplus-rails (2.1.2.1)
     method_source (0.8.2)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
@@ -169,6 +171,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
+    underscore-rails (1.8.3)
     web-console (2.3.0)
       activemodel (>= 4.0)
       binding_of_caller (>= 0.7.2)
@@ -182,8 +185,10 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.6)
   coffee-rails (~> 4.1.0)
   figaro
+  gmaps4rails
   jbuilder (~> 2.0)
   jquery-rails
+  markerclustererplus-rails
   omniauth-facebook
   pg (~> 0.15)
   pry
@@ -193,6 +198,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   turbolinks
   uglifier (>= 1.3.0)
+  underscore-rails
   web-console (~> 2.0)
 
 BUNDLED WITH

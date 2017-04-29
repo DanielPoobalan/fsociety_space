@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     resources :sessions
     resources :apps, only: [:index]
     resources :lists, only: [:index]
+    resources :landslides, only: [:show]
   end
 
   match 'auth/:provider/callback', to: 'users/sessions#create', via: [:get, :post]

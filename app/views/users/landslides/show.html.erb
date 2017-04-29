@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <div class="col-md-12">
+    <table class="table table-striped">
+      <thead>
+        <% @landslide.attributes.each do |ls| %>
+          <tr>
+            <th><%= ls[0].humanize %></th>
+            <td><%= ls[1] %></td>
+          </tr>
+        <% end %>
+      </thead>
+    </table>
+  </div>
+</div>
