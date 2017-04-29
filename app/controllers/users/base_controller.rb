@@ -1,7 +1,7 @@
 class Users::BaseController < Users::ApplicationController
 
-  # before_action :current_user
-  # before_action :redirect_if_loggin
+  before_action :current_user
+  before_action :redirect_if_loggin
 
   helper_method :current_user
 
@@ -14,8 +14,9 @@ class Users::BaseController < Users::ApplicationController
   end
 
   def redirect_if_loggin
-    if current_user.present?
-      redirect_to users_apps_path
+    if session[:user_id].nil?
+      flash[:error] = "Please Login!"
+      redirect_to new_users_session_path
     end
   end
 
