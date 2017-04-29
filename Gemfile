@@ -13,6 +13,9 @@ gem 'rails_12factor'
 gem 'figaro'
 gem 'omniauth-facebook'
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'gmaps4rails'
+gem 'underscore-rails'
+gem 'markerclustererplus-rails'
 
 group :development, :test do
   gem 'pry'
