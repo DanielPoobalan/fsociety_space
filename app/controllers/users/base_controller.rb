@@ -5,6 +5,8 @@ class Users::BaseController < Users::ApplicationController
 
   helper_method :current_user
 
+  layout 'application'
+
   private
 
   def current_user
