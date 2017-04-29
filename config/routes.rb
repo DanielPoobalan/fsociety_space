@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   namespace :users do
     resources :sessions
+    resources :apps, only: [:index]
   end
 
   match 'auth/:provider/callback', to: 'users/sessions#create', via: [:get, :post]
