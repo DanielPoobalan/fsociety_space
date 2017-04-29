@@ -13,10 +13,7 @@ class Users::ChartsController < Users::BaseController
     #   count += x.total_fatality
     # end
 
-    @arr =     [[0, 1988],
-    [0, 1993],
-    [0, 1997],
-    [0, 2003],
+    @arr =     [
     [3, 2005],
     [240, 2006],
     [882, 2007],
