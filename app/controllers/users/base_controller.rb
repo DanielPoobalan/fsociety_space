@@ -1,7 +1,7 @@
 class Users::BaseController < Users::ApplicationController
 
-  before_action :current_user
-  before_action :redirect_if_loggin
+  # before_action :current_user
+  # before_action :redirect_if_loggin
 
   helper_method :current_user
 
