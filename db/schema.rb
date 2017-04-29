@@ -11,10 +11,48 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170429094438) do
+ActiveRecord::Schema.define(version: 20170429102424) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "landslides", force: :cascade do |t|
+    t.date     "date"
+    t.string   "time"
+    t.string   "country"
+    t.string   "nearest_places"
+    t.string   "hazard_type"
+    t.string   "landslide_type"
+    t.string   "trigger"
+    t.string   "storm_name"
+    t.integer  "fatalities"
+    t.integer  "injuries"
+    t.string   "source_name"
+    t.string   "source_link"
+    t.string   "location_description"
+    t.string   "location_accuracy"
+    t.string   "landslide_size"
+    t.string   "photos_link"
+    t.string   "cat_src"
+    t.integer  "cat_id"
+    t.string   "countryname"
+    t.string   "near"
+    t.float    "distance"
+    t.string   "adminname1"
+    t.string   "adminname2"
+    t.string   "population"
+    t.string   "countrycode"
+    t.string   "continentcode"
+    t.string   "key"
+    t.integer  "version"
+    t.string   "tstamp"
+    t.string   "changeset_id"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "geolocation"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "provider"
